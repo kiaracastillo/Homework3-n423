@@ -5,10 +5,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homework-03</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
- <script src="lib/jquery-3.7.1.min.js">
-</script><script src="app/app.js"></script>
-</body>
+  
+
+    <main class="page-wrap">
+
+      <!-- form -->
+      <section class="card form-card">
+        <h2 class="card-title">Add a student</h2>
+
+        <form id="formAlumno">
+      <div class="fields two-col">
+    
+     <label class="field">
+        
+      <span class="field-label">Full name</span>  
+      <input id="sNombre" name="name" type="text" placeholder=""  />
+
+            </label>
+
+      <label class="field">
+
+         <span class="field-label">Age</span>
+     <input id="sEdad" name="age" type="number"  placeholder=""  />
+
+            </label>
+
+       <label class="field">
+
+         <span class="field-label">Phone</span>
+          <input id="sTelefono" name="phone" type="tel" placeholder="" />
+
+            </label>
+
+      <label class="field">
+        <span class="field-label">Email</span>
+      <input id="sCorreo" name="email" type="email" placeholder=""  />
+            </label>
+          </div>
+
+   <label class="field block">
+       <span class="field-label">Classes</span>
+     <input id="sClases" name="classes" type="text" placeholder="Add a class separated by commas" />
+
+          </label>
+
+   <div class="actions">
+
+     <button id="btnGuardar" type="submit" class="btn primary">Add student</button>
+
+      <button id="btnMostrar" type="button" class="btn">Show Students</button>
+
+       <button id="btnClear" type="button" class="btn danger">Delete all</button>
+          </div>
+
+  <p id="boxMensaje" class="status"></p>
+       
+      
+    </form>
+
+      </section>
+
+      <!-- card with results -->
+      <section class="card-list">
+       
+   <div class="list-header">
+     <h2>Student List</h2>
+         
+
+  </div>
+
+        <div id="zoneLista" class="card-grid"></div>
+
+      </section>
+
+    </main>
+
+    <script src="lib/jquery-3.7.1.min.js"></script>
+    <script src="app/app.js"></script>
+    
+  </body>
 </html>
+
